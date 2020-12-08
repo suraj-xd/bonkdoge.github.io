@@ -14,7 +14,7 @@
     <div class="doge">
         <h1 style="text-align: center; border-radius: 30px; color: dark black; border: 4px solid grey; padding: 2; background-color: rgb(250, 248, 123); margin: 0%; padding: 0%; "><b>🦴BONK DOGE🦴</b> </h1>
     </div>
-    <div id = "img"class="image">
+    <div id = "img" class="image">
         <img style=" display: flex; justify-content: center; align-content : center;" src="dogefirst.jpg" alt="">
     </div>
     <div style="text-align: center" id="bonk" class="bonk">
@@ -24,16 +24,16 @@
     <h6> © Suraj Gaud</h6>
 <script>
     let image = document.querySelector("img")
-        let butn = document.querySelector("#bonk")
-        let audio = document.querySelector('audio')
-        butn.addEventListener('click', () => {
+    let butn = document.querySelector("#bonk")
+    let audio = document.querySelector('audio')
+    butn.addEventListener('click', () => {
             setTimeout(() => {
-                img.src = image.src = 'dogesecond.jpg'
+                img.src = "dogesecond.jpg"
                 audio.play()
             }, 100);
             setTimeout(() => {
                 // audio.pause()
-                img.src = image.src = 'dogefirst.jpg'
+                img.src = "dogefirst.jpg"
 
             }, 400);
 
