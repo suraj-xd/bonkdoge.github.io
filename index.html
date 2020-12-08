@@ -9,7 +9,7 @@
         <h1 style="text-align: center; border-radius: 30px; color: dark black; border: 4px solid grey; padding: 2; background-color: rgb(250, 248, 123); margin: 0%; padding: 0%; "><b>🦴BONK DOGE🦴</b> </h1>
     </div>
     <div id = "img"class="image">
-        <img style="width: 60%; height: 53%;" src="dogefirst.jpg" alt="">
+        <img style="width: 60%; height: 53%;" onclick="transform()" src="dogefirst.jpg" alt="">
     </div>
     <div style="text-align: center" id="bonk" class="bonk">
         <button ><h3><b>B 👋 N K</b></h3></button>
@@ -17,21 +17,20 @@
     <audio src="Bonk Sound effect AETrim1607336866052.mp3" type="audio/mpeg" ></audio>
     <h6> © Suraj Gaud</h6>
 <script>
-        let image = document.querySelector("img")
-        let butn = document.querySelector("#bonk")
-        let audio = document.querySelector('audio')
-        butn.addEventListener('click', () => {
-            setTimeout(() => {
-                img.src = 'dogesecond.jpg'
-                audio.play()
-            }, 5000);
-            setTimeout(() => {
-                // audio.pause()
-                img.src = 'dogefirst.jpg'
+        function transform() {
+            let image = document.querySelector("img")
+            let butn = document.querySelector("#bonk")
+            let audio = document.querySelector('audio')
+                setTimeout(() => {
+                    img.src = 'dogesecond.jpg'
+                    audio.play()
+                }, 5000);
+                setTimeout(() => {
+                    // audio.pause()
+                    img.src = 'dogefirst.jpg'
 
-            }, 10000);
-
-        })
+                }, 10000);
+        }
 </script>
 </body>
 </html>
